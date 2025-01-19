@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-Light.woff2) format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url(../fonts/Lora-Regular.woff2) format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background: #ffffff url(../images/фон.jpg);
+  margin: 0;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  min-height: 100vh;
+  grid-template-areas:
+    "h h"
+    "m m"
+    "b b";
+}
+
+.header {
+  grid-area: h;
+}
+
+.main {
+  grid-area: m;
+}
+
+.button {
+  grid-area: b;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.img_header {
+  height: 100px;
+  width: 100px;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  font-size: 20pt;
+  margin: 10px;
+  font-family: 'Lora';
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #282828;
+}
+
+.main {
+  display: grid;
+  margin: 30px;
+}
+
+p {
+  grid-column: 2/3;
+  text-align: right;
+  margin: 0;
+  font-family: 'Lato';
+}
+
+.imges {
+  position: relative;
+  top: 100px;
+  float: right;
+}
+
+.imag1 {
+  grid-column: 2/3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 133px;
+  width: 723px;
+}
+
+.imag2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 29px;
+  width: 512px;
+}
+
+.img3 {
+  text-align: right;
+  height: 377px;
+  width: 684px;
+}
+
+.button {
+  display: flex;
+  font-family: 'Lato';
+  justify-content: center;
+  margin: 10px;
+  width: 373px;
+  height: 78px;
+  border-radius: 60px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  padding: 12px 16px 12px 16px;
+  color: #EBC988;
+  font-size: 28px;
+  text-align: center;
+  justify-self: center;
+}
